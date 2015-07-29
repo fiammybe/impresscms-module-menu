@@ -1,0 +1,16 @@
+{
+  "name": "impresscms/impresscms-module-menu",
+  "description": "Menu handling for ImpressCMS",
+  "minimum-stability": "stable",
+  "license": "GPLv2",
+  "authors": [
+    {
+      "name": "fiammybe",
+      "email": "david.j@impresscms.org"
+    }
+    {
+      "name": "QM-B",
+      "email": "qm-b@hotmail.de"
+    }
+  ]
+}
