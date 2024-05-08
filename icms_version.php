@@ -26,10 +26,10 @@ defined("ICMS_ROOT_PATH") or die("ICMS root path not defined");
 /**  General Information  */
 $modversion = array(
 						"name"						=> _MI_MENU_MD_NAME,
-						"version"					=> 1.2,
+						"version"					=> "1.3",
 						"description"				=> _MI_MENU_MD_DESC,
-						"author"					=> "QM-B",
-						"author_realname"			=> "Steffen Flohrer",
+						"author"					=> "fiammybe",
+						"author_realname"			=> "David Janssens",
 						"credits"					=> "<a href='http://code.google.com/p/amaryllis-modules/' title='Amaryllis Modules'>Amaryllis Modules</a>",
 						"help"						=> "admin/manual.php",
 						"license"					=> "GNU General Public License (GPL)",
@@ -43,16 +43,16 @@ $modversion = array(
 						"image"						=> "images/icon_big.png", /* for backward compatibility */
 
 					/**  Development information */
-						"status_version"			=> "1.2",
+						"status_version"			=> "1.3",
 						"status"					=> "beta",
-						"date"						=> "12:44 17.09.2013",
+						"date"						=> "08 May 2024",
 						"author_word"				=> "",
 						"warning"					=> _CO_ICMS_WARNING_BETA,
 
 					/** Contributors */
-						"developer_website_url"		=> "http://code.google.com/p/amaryllis-modules/",
-						"developer_website_name"	=> "Amaryllis Modules",
-						"developer_email"			=> "qm-b@hotmail.de",
+						"developer_website_url"		=> "https://github.com/fiammybe/impresscms-module-menu",
+						"developer_website_name"	=> "fiammybe's Github",
+						"developer_email"			=> "david.j@impresscms.org",
 
 					/** Administrative information */
 						"hasAdmin"					=> 1,
@@ -76,21 +76,20 @@ $modversion = array(
 						"hasComments"				=> 0
 				);
 
-$modversion['people']['developers'][] = "<a href='http://community.impresscms.org/userinfo.php?uid=1314' target='_blank'>QM-B</a> &nbsp;&nbsp;<span style='font-size: smaller;'>( qm-b [at] hotmail [dot] de )</span>";
-$modversion['people']['documenters'][] = "<a href='http://community.impresscms.org/userinfo.php?uid=1314' target='_blank'>QM-B</a>";
+$modversion['people']['developers'][] = "<a href='http://community.impresscms.org/userinfo.php?uid=1102'>fiammybe</a>";
+$modversion['people']['documenters'][] = "<a href='http://community.impresscms.org/userinfo.php?uid=1102'>fiammybe</a>";
 $modversion['people']['translators'][] = "[url=http://community.impresscms.org/userinfo.php?uid=1295]Lotus[/url]";
 $modversion['people']['other'][] = "Templates by: [url=http://community.impresscms.org/userinfo.php?uid=1295]Lotus[/url]";
 $modversion['people']['testers'][] = "[url=http://community.impresscms.org/userinfo.php?uid=1295]Lotus[/url]";
-$modversion['people']['testers'][] = "[url=http://community.impresscms.org/userinfo.php?uid=1102]Fiammybe[/url]";
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////// SUPPORT //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-$modversion['submit_bug'] = 'http://code.google.com/p/amaryllis-modules/issues/entry?template=Defect%20report%20from%20user';
-$modversion['submit_feature'] = 'http://code.google.com/p/amaryllis-modules/issues/entry?template=Defect%20report%20from%20user';
-$modversion['support_site_url'] = 'http://community.impresscms.org/modules/newbb/viewforum.php?forum=9';
-$modversion['support_site_name']= 'ImpressCMS Community Forum';
+$modversion['submit_bug'] = "https://github.com/fiammybe/impresscms-module-menu/issues";
+$modversion['submit_feature'] = "https://github.com/fiammybe/impresscms-module-menu/issues";
+$modversion['support_site_url'] = "https://github.com/fiammybe/impresscms-module-menu/issues";
+$modversion['support_site_name']= 'Github';
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////// DATABASE /////////////////////////////////////////////////////
