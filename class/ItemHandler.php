@@ -40,8 +40,6 @@ class mod_menu_ItemHandler extends icms_ipf_Handler {
 		parent::__construct($db, "item", "item_id", "item_name", "item_dsc", MENU_DIRNAME);
 		$this->enableUpload(array("image/gif", "image/jpeg", "image/pjpeg", "image/png"), 512000, 250, 250);
 		$this->addPermission("item_view", _CO_MENU_ITEM_PERM_VIEW, _CO_MENU_ITEM_PERM_VIEW_DSC);
-
-		$this->_urls = icms_getCurrentUrls();
 	}
 
 	public function getItemCriterias($act = FALSE, $item_pid = NULL, $menu_id = FALSE, $start=0,$limit=0,$perm="item_view", $order ="weight" , $sort ="DESC", $lang = FALSE ) {
