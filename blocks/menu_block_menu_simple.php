@@ -20,7 +20,7 @@
 if (!defined("ICMS_ROOT_PATH")) die("ICMS root path not defined");
 
 function b_menu_menu_simple_show($options) {
-	global $xoTheme, $icmsConfig;
+	global $xoTheme;
 	$moddir = basename(dirname(dirname(__FILE__)));
 	include_once ICMS_MODULES_PATH . '/' . $moddir . '/include/common.php';
 	$menu_handler = icms_getModuleHandler('menu', MENU_DIRNAME, 'menu');
@@ -29,7 +29,7 @@ function b_menu_menu_simple_show($options) {
 	$block["home_link"] = ICMS_URL.'/index.php';
 	$menuObj = $menu_handler->get($options[0]);
 	$menu = $item_handler->_currentMenu = $menuObj->toArray();
-	$urls = icms_getCurrentUrls();
+	$urls = icms::$urls;
 	$block['is_home'] = $urls['isHomePage'];
 	$block['menu_menu'] = $menu;
 	$block['menu_items'] = $item_handler->getItems(TRUE, NULL, $options[0], FALSE,FALSE,"item_view", $menuObj->getOrder(), $menuObj->getSort(), $icmsConfig['language']);
